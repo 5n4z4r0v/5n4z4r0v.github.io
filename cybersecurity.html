@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiber Təhlükəsizlik Məqalələri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://wallpaperaccess.com/full/2703652.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
+      min-height: 100vh;
+      padding: 50px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #00ffff;
+    }
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+    .article {
+      background-color: #1e1e2f;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+      transition: transform 0.3s;
+    }
+    .article:hover {
+      transform: scale(1.05);
+    }
+    .article a {
+      text-decoration: none;
+      color: #00ffff;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+    .article p {
+      margin-top: 10px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Kiber Təhlükəsizlik Məqalələri</h1>
+    <div class="articles">
+      <div class="article">
+        <a href="#">Firewall necə işləyir?</a>
+        <p>Firewall texnologiyası ilə şəbəkə təhlükəsizliyinin təmin olunması.</p>
+      </div>
+      <div class="article">
+        <a href="#">Sosial mühəndislik hücumları</a>
+        <p>İnsan zəifliklərini hədəf alan hiylələr və onların qarşısının alınması yolları.</p>
+      </div>
+      <div class="article">
+        <a href="#">DDoS hücumları və müdafiə yolları</a>
+        <p>Servislərin çökdürülməsinə qarşı tədbirlər və texnikalar.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
