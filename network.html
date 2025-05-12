@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şəbəkə Məqalələri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    header {
+      background-color: #1b1b1b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      margin: 0;
+      color: #00ffff;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .article-link {
+      background-color: #262626;
+      border-left: 5px solid #00ffff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+    .article-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 20px rgba(0,255,255,0.4);
+    }
+    .article-link h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #00ffff;
+    }
+    .article-link p {
+      color: #ccc;
+    }
+    .network-bg {
+      background-image: url('https://i.ibb.co/G2kzr59/network-background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Şəbəkə Məqalələri</h1>
+  </header>
+
+  <div class="container">
+    <div class="network-bg"></div>
+
+    <div class="article-link">
+      <h2>Ən yaxşı dinamik marşrutlaşdırma protokolu: EIGRP</h2>
+      <p>EIGRP protokolunun üstünlükləri və konfiqurasiya nümunələri.</p>
+      <a href="eigrp.html" style="color:#00ffff; text-decoration: underline;">Məqaləni oxu</a>
+    </div>
+
+    <div class="article-link">
+      <h2>OSPF ilə marşrutlaşdırma</h2>
+      <p>OSPF protokolunun arxitekturası və lab nümunələri.</p>
+      <a href="ospf.html" style="color:#00ffff; text-decoration: underline;">Məqaləni oxu</a>
+    </div>
+
+    <div class="article-link">
+      <h2>VLAN-lar və Trunk portlar</h2>
+      <p>Şəbəkəni bölmək və trafiki idarə etmək üçün VLAN texnologiyası.</p>
+      <a href="vlan.html" style="color:#00ffff; text-decoration: underline;">Məqaləni oxu</a>
+    </div>
+  </div>
+</body>
+</html>
