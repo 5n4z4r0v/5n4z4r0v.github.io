@@ -1,103 +1,55 @@
-:root {
-  --bg-color: #0f0f0f;
-  --text-color: #f0f0f0;
-  --accent: #00e5ff;
-  --card-bg: #1e1e1e;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
 }
 
 header {
-  padding: 2rem;
-  background-color: #151515;
-  text-align: center;
-  border-bottom: 1px solid #333;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  color: var(--accent);
+nav {
+    margin-top: 10px;
 }
 
-header p {
-  color: #aaa;
-  margin-top: 0.5rem;
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #9ca3af;
+    font-weight: bold;
 }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
+nav a.active,
+nav a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
 }
 
-.post-list {
-  display: grid;
-  gap: 1.5rem;
+main {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.post {
-  background-color: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  transition: transform 0.2s;
+section h2 {
+    color: #1f2937;
 }
 
-.post:hover {
-  transform: translateY(-4px);
-}
-
-.post h3 {
-  margin-top: 0;
-}
-
-.post a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.post a:hover {
-  text-decoration: underline;
+ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 footer {
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  color: #888;
-  border-top: 1px solid #333;
-  margin-top: 3rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #e5e7eb;
+    margin-top: 40px;
 }
-
-.category-buttons {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.category-card {
-  display: block;
-  background-color: #222;
-  padding: 20px;
-  color: #00ffff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.category-card:hover {
-  background-color: #333;
-}
-
