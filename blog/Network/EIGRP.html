@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EIGRP Nədir?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0077cc;
+    }
+    code {
+      background-color: #eee;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>EIGRP (Enhanced Interior Gateway Routing Protocol)</h1>
+
+  <h2>Giriş</h2>
+  <p>
+    <strong>EIGRP</strong> — Cisco tərəfindən hazırlanmış, IGP (Interior Gateway Protocol) kateqoriyasına daxil olan dinamik marşrutlaşdırma protokoludur.
+    O, həm distance vector, həm də link-state metodlarının üstünlüklərini birləşdirərək "advanced distance-vector" protokolu kimi tanınır.
+  </p>
+
+  <h2>Əsas Xüsusiyyətlər</h2>
+  <ul>
+    <li><strong>DUAL (Diffusing Update Algorithm):</strong> Yönləndirmə döngələrindən qorunmaq və tez konvergensiya üçün istifadə olunur.</li>
+    <li><strong>Classless Routing:</strong> Subnet mask dəstəyi var.</li>
+    <li><strong>Incremental Updates:</strong> Yalnız dəyişən marşrut məlumatları ötürülür.</li>
+    <li><strong>Load Balancing:</strong> Eyni anda bir neçə bərabər və ya fərqli metric-lərlə marşrut seçimi mümkündür.</li>
+  </ul>
+
+  <h2>Metric Hesablanması</h2>
+  <p>
+    EIGRP metric hesablamasında aşağıdakı parametrlərdən istifadə edir:
+  </p>
+  <ul>
+    <li>Bandwidth</li>
+    <li>Delay</li>
+    <li>Reliability</li>
+    <li>Load</li>
+    <li>MTU (amma hesablamada istifadə olunmur)</li>
+  </ul>
+
+  <h2>EIGRP Konfiqurasiyası (Cisco CLI)</h2>
+  <pre><code>
+Router(config)# router eigrp 100
+Router(config-router)# network 192.168.1.0 0.0.0.255
+Router(config-router)# network 192.168.2.0 0.0.0.255
+Router(config-router)# no auto-summary
+  </code></pre>
+
+  <h2>Terminlər</h2>
+  <ul>
+    <li><strong>AS (Autonomous System):</strong> Eyni EIGRP domenində olan router-ları qruplaşdırmaq üçün istifadə olunur.</li>
+    <li><strong>Successor:</strong> Ən optimal marşrut.</li>
+    <li><strong>Feasible Successor:</strong> Backup marşrut.</li>
+    <li><strong>Neighbor:</strong> Hello mesajları ilə əlaqə saxlayan qonşu router-lar.</li>
+  </ul>
+
+  <h2>Nəticə</h2>
+  <p>
+    EIGRP, Cisco əsaslı şəbəkələrdə sürətli və effektiv dinamik marşrutlaşdırma təklif edir. Təhlükəsizlik, performans və idarəetmə baxımından stabil və güvənilirdir.
+  </p>
+
+</body>
+</html>
