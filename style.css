@@ -79,3 +79,25 @@ footer {
   border-top: 1px solid #333;
   margin-top: 3rem;
 }
+
+.category-buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.category-card {
+  display: block;
+  background-color: #222;
+  padding: 20px;
+  color: #00ffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.category-card:hover {
+  background-color: #333;
+}
+
