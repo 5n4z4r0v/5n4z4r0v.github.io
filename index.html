@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samir's Cyber Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+  <header>
     <h1>👨‍💻 Samir's Cyber Blog</h1>
-    <p>Kiber təhlükəsizlik və IT mövzularında yazılar.</p>
+    <p>Kiber təhlükəsizlik və IT dünyasına dair yazılar</p>
+  </header>
 
-    <h2>📄 Məqalələr:</h2>
-    <ul class="post-list">
-      <li><a href="blog/phishing.html">🎣 Phishing hücumları nədir?</a></li>
-      <li><a href="#">🛡️ Firewall nədir və necə işləyir?</a></li>
-      <li><a href="#">🐧 Kali Linux ilə sızma testləri</a></li>
-    </ul>
+  <main class="container">
+    <h2>📄 Son məqalələr:</h2>
+    <div class="post-list">
+      <div class="post">
+        <h3><a href="blog/phishing.html">🎣 Phishing hücumları nədir?</a></h3>
+        <p>İstifadəçiləri aldadaraq məlumatlarını ələ keçirmək məqsədi ilə edilən hücum forması.</p>
+      </div>
 
-    <footer>
-      <p>&copy; 2025 Samir | GitHub Pages ilə hazırlanıb</p>
-    </footer>
-  </div>
+      <div class="post">
+        <h3><a href="#">🛡️ Firewall necə işləyir?</a></h3>
+        <p>Firewall sistemləri şəbəkə trafikinə nəzarət edərək təhlükəni azaldır.</p>
+      </div>
+
+      <div class="post">
+        <h3><a href="#">🐧 Kali Linux ilə sızma testləri</a></h3>
+        <p>Etik hakerlər üçün ən populyar əməliyyat sistemlərindən biri ilə tanışlıq.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Samir | Hazırlanıb GitHub Pages vasitəsilə</p>
+  </footer>
 </body>
 </html>
-
