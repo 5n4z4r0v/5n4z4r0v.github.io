@@ -1,7 +1,7 @@
 :root {
   --bg-color: #0f0f0f;
   --text-color: #f0f0f0;
-  --accent: #00bcd4;
+  --accent: #00e5ff;
   --card-bg: #1e1e1e;
 }
 
@@ -19,7 +19,7 @@ body {
 
 header {
   padding: 2rem;
-  background-color: #1a1a1a;
+  background-color: #151515;
   text-align: center;
   border-bottom: 1px solid #333;
 }
