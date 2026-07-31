@@ -207,13 +207,14 @@ function initCounters() {
         if (!entry.isIntersecting) return;
         const el = entry.target;
         const target = +el.dataset.count;
+        const suffix = el.dataset.suffix || '';
         let current = 0;
         const step = Math.max(1, Math.ceil(target / 60));
         const tick = () => {
           current = Math.min(target, current + step);
-          el.textContent = current;
+          el.textContent = current + suffix;
           if (current < target) requestAnimationFrame(tick);
-          else el.textContent = target;
+          else el.textContent = target + suffix;
         };
         tick();
         io.unobserve(el);
