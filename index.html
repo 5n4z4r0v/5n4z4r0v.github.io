@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cybersecurity portfolio & technical blog - penetration testing, write-ups, labs" />
+  <title>~/cybersecurity-portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-prompt">$</span> <span id="navUserName">user</span>@root:~$
+      </a>
+      <nav class="nav__links" aria-label="Əsas naviqasiya">
+        <a href="#about" class="nav__link">about</a>
+        <a href="#blog" class="nav__link">write-ups</a>
+        <a href="#contact" class="nav__link">contact</a>
+        <a href="#" class="nav__link nav__link--btn" id="resumeBtn">resume</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menyunu aç">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__tag">
+            <span class="hero__status"></span> OPEN TO SECURITY ROLES
+          </p>
+          <h1 class="hero__title">
+            Hi, I&rsquo;m <span class="accent" id="userName">Your Name</span>.<br />
+            Cybersecurity Researcher.
+          </h1>
+          <p class="hero__sub" id="userBio">
+            Passionate about penetration testing, red teaming and defensive security.
+            I break things, document everything, and share technical write-ups
+            &amp; lab solutions on Medium.
+          </p>
+
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__title">root@sec — zsh</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__line"><span class="t-green">user@sec</span>:<span class="t-blue">~</span>$ whoami</p>
+              <p class="terminal__line terminal__out" id="whoamiOut">security_researcher</p>
+              <p class="terminal__line"><span class="t-green">user@sec</span>:<span class="t-blue">~</span>$ cat interests.txt</p>
+              <p class="terminal__line terminal__out" id="interestsOut">web_appsec :: network :: malware</p>
+              <p class="terminal__line terminal__cursor"><span class="t-green">user@sec</span>:<span class="t-blue">~</span>$ <span class="type-cursor" id="typeCursor"></span></p>
+            </div>
+          </div>
+
+          <div class="hero__socials" id="socialLinks">
+            <!-- JS tərəfindən doldurulur -->
+          </div>
+        </div>
+
+        <div class="hero__aside">
+          <div class="hero__glitch" aria-hidden="true">0xSEC</div>
+          <ul class="hero__stats">
+            <li class="stat">
+              <span class="stat__num" data-count="25">0</span>
+              <span class="stat__label">Write-ups</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num" data-count="40">0</span>
+              <span class="stat__label">Labs solved</span>
+            </li>
+            <li class="stat">
+              <span class="stat__num" data-count="2">0</span>
+              <span class="stat__label">Yrs experience</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Interests -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="accent">01.</span> about</h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I am a cybersecurity enthusiast focused on offensive security —
+              web application testing, infrastructure assessment and CTF
+              challenges. My workflow lives in the terminal: recon, enumeration,
+              exploitation, and always <span class="accent">documenting the process</span>.
+            </p>
+            <p>
+              Beyond offensive work, I care about secure development practices and
+              sharing knowledge with the community. Every lab I solve becomes a
+              detailed write-up so others can learn along.
+            </p>
+          </div>
+          <div class="about__tech">
+            <h3 class="about__tech-title">// tools &amp; interests</h3>
+            <div class="chips" id="toolChips">
+              <!-- JS tərəfindən doldurulur -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog / Write-ups -->
+    <section id="blog" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="accent">02.</span> lab &amp; technical write-ups</h2>
+        <p class="section__sub">Medium &ldquo;@s4m1r&rdquo; RSS feed-indən bütün məqalələr dinamik yüklənir.</p>
+
+        <div id="blogGrid" class="blog-grid" aria-live="polite">
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+        </div>
+
+        <p class="blog__empty hidden" id="blogEmpty">
+          Yeni yazılar tezliklə əlavə olunacaq. Medium hesabımı izləyin!
+        </p>
+
+        <div class="blog__more">
+          <a class="btn" id="mediumLink" href="#" target="_blank" rel="noopener">
+            > medium.com'da hamısını oxu
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="accent">03.</span> contact</h2>
+        <div class="contact__grid">
+          <div class="terminal contact__terminal" aria-hidden="true">
+            <div class="terminal__bar">
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__dot"></span>
+              <span class="terminal__title">contact.sh</span>
+            </div>
+            <div class="terminal__body">
+              <p class="terminal__line"><span class="t-green">user@sec</span>:<span class="t-blue">~</span>$ ./contact --email</p>
+              <p class="terminal__line terminal__out" id="contactOut">sending mail...</p>
+              <p class="terminal__line"><span class="t-green">user@sec</span>:<span class="t-blue">~</span>$ ./contact --pgp</p>
+              <p class="terminal__line terminal__out">not_available</p>
+            </div>
+          </div>
+
+          <form class="contact__form" id="contactForm" action="#" method="post" novalidate>
+            <div class="field">
+              <label for="name">name</label>
+              <input type="text" id="name" name="name" placeholder="Adınız" required />
+            </div>
+            <div class="field">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Mesajınız..." required></textarea>
+            </div>
+            <button type="submit" class="btn">> göndər</button>
+            <p class="form__status hidden" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> <span id="footerName">Your Name</span></p>
+      <p class="footer__cmd"><span class="accent">$</span> echo &quot;built with opencode&quot;</p>
+    </div>
+  </footer>
+
+  <a href="#hero" class="to-top" id="toTop" aria-label="Yuxarı qayıt">↑</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
